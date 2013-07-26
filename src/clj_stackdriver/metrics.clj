@@ -24,7 +24,7 @@
   "Send the custom metrics"
   [api-key metrics]
     {:pre [(vector? metrics)]}
-    (let [gateway-msg {:timestamp (-> (java.util.Date.) .getTime (quot 1000))
+    (let [gateway-msg {:timestamp (-> (System/currentTimeMillis) (quot 1000))
                        :proto_version 1
                        :data metrics}
           json-data (generate-string gateway-msg)]

@@ -15,8 +15,7 @@
             data-bytes)))
 
 (let [metric_name 'my_test_metric'
-      current-time (-> (java.util.Date.) 
-                       .getTime
+      current-time (-> (System/currentTimeMillis)
                        (quot 1000))
       time-0 current-time
       time-1 (- time-0 60)
