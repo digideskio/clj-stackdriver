@@ -19,7 +19,7 @@ A Clojure library for interacting with [Stackdriver](http://www.stackdriver.com/
   (:require [clj-stackdriver.metrics :as sd]))
 
 ;; Some example data points
-(def current-time (-> (java.util.Date.) .getTime (quot 1000)))
+(def current-time (-> (System/currentTimeMillis) (quot 1000)))
 (def data-point-01 {:name 'my_test_metric'
                     :value (rand-int 1024)
                     :collected_at current-time})
