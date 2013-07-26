@@ -39,8 +39,10 @@ A Clojure library for interacting with [Stackdriver](http://www.stackdriver.com/
 ````
 
 Please see the [custom metrics
-article](http://feedback.stackdriver.com/knowledgebase/articles/181488-sending-custom-metrics-to-the-stackdriver-system)
-for more information about fields in the data points.
+](http://feedback.stackdriver.com/knowledgebase/articles/181488-sending-custom-metrics-to-the-stackdriver-system)
+and the [deploy
+events](http://feedback.stackdriver.com/knowledgebase/articles/212917-sending-code-deploy-events-to-stackdriver)
+articles for more information about accepted fields.
 
 Sending multiple metrics in a single call to `send-metrics` is recommended.
 Every call to `send-metrics` requires an HTTPS connection and its associated
