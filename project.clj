@@ -1,4 +1,4 @@
-(defproject clj-stackdriver "0.1.0"
+(defproject clj-stackdriver "0.1.1"
   :description "Clojure interface for the Stackdriver service"
   :url "https://github.com/mentalblock/clj-stackdriver"
   :license {:name "Eclipse Public License"
