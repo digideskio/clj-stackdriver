@@ -23,7 +23,7 @@
 (defn send-metrics
   "Send the custom metrics"
   [api-key metrics]
-    {:pre [(vector? metrics)]}
+    {:pre [(sequential? metrics)]}
     (let [gateway-msg {:timestamp (-> (System/currentTimeMillis) (quot 1000))
                        :proto_version 1
                        :data metrics}
