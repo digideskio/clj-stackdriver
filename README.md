@@ -8,7 +8,7 @@ A Clojure library for interacting with [Stackdriver](http://www.stackdriver.com/
 [Clojars](http://clojars.org/clj-stackdriver):
 
 ```clojure
-[clj-stackdriver "0.1.0"]
+[clj-stackdriver "0.1.1"]
 ```
 
 ## Usage
